@@ -23,10 +23,4 @@ export class AppController {
   getProfile(@Req() req) {
     return req.user;
   }
-
-  @UseGuards(JwtAuthGuard)
-  @Post('profile/tweet')
-  getProfile2(@Req() req) {
-    return req.user;
-  }
 }

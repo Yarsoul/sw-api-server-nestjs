@@ -28,3 +28,8 @@
 "title": "Новый твит1",
 "text": "Текст нового твита"
 }'
+
+Авторизация пользователя:
+> curl --location --request POST 'http://localhost:3000/auth' \
+--header 'Content-Type: application/json' \
+--data-raw '{"login": "Ivan", "password": "fghmfhm"}'
